@@ -597,6 +597,50 @@ section {
   }
 }
 
+/* ── SVG Icons as Background Images ── */
+
+/* Card icons: ~48px icon centered in large card-image container */
+.icon-grid,
+.icon-rocket {
+  background-size: clamp(40px, 8vw, 48px);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-grid {
+  background-image: url('../images/grid-icon.svg');
+}
+
+.icon-rocket {
+  background-image: url('../images/rocket-icon.svg');
+}
+
+/* Value icons: 36px icon in 56px container */
+.icon-medal,
+.icon-book,
+.icon-heart,
+.icon-wrench {
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-medal {
+  background-image: url('../images/medal-icon.svg');
+}
+
+.icon-book {
+  background-image: url('../images/book-icon.svg');
+}
+
+.icon-heart {
+  background-image: url('../images/heart-icon.svg');
+}
+
+.icon-wrench {
+  background-image: url('../images/wrench-icon.svg');
+}
+
 /* Print styles */
 @media print {
   .header,
