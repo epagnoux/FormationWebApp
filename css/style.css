@@ -615,9 +615,9 @@ section {
   mask-image: url('/images/instagram-icon.svg');
 }
 
-.icon-facebook {
-  -webkit-mask-image: url('/images/facebook-icon.svg');
-  mask-image: url('/images/facebook-icon.svg');
+.icon-youtube {
+  -webkit-mask-image: url('/images/youtube-icon.svg');
+  mask-image: url('/images/youtube-icon.svg');
 }
 
 /* ── Pages placeholder ── */
