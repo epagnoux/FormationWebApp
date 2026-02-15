@@ -164,8 +164,8 @@ ul { list-style: none; }
 }
 .hero-image {
   width: 100%;
-  height: clamp(200px, 50vh, 400px);
-  background: url('../images/main-header.jpeg') center/cover no-repeat;
+  height: 60vh;
+  background: url('../images/main-header.jpeg') top/cover no-repeat;
   border-radius: 0;
   margin-bottom: var(--spacing-lg);
   background-attachment: initial;
