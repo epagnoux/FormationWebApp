@@ -611,11 +611,11 @@ section {
 }
 
 .icon-grid {
-  background-image: url('../images/grid-icon.svg');
+  background-image: url('/images/grid-icon.svg');
 }
 
 .icon-rocket {
-  background-image: url('../images/rocket-icon.svg');
+  background-image: url('/images/rocket-icon.svg');
 }
 
 /* Value icons: 36px icon in 56px container */
@@ -629,19 +629,19 @@ section {
 }
 
 .icon-medal {
-  background-image: url('../images/medal-icon.svg');
+  background-image: url('/images/medal-icon.svg');
 }
 
 .icon-book {
-  background-image: url('../images/book-icon.svg');
+  background-image: url('/images/book-icon.svg');
 }
 
 .icon-heart {
-  background-image: url('../images/heart-icon.svg');
+  background-image: url('/images/heart-icon.svg');
 }
 
 .icon-wrench {
-  background-image: url('../images/wrench-icon.svg');
+  background-image: url('/images/wrench-icon.svg');
 }
 
 /* Print styles */
