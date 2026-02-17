@@ -643,6 +643,95 @@ section {
   }
 }
 
+/* ── Formations Page ── */
+.formations-hero {
+  padding-top: var(--spacing-2xl);
+}
+
+.formations-hero h1 {
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-weight: 400;
+  color: var(--color-text-body);
+}
+
+/* Bannière visuelle formations */
+.formation-banner {
+  padding: var(--spacing-2xl) 0;
+}
+
+.formation-banner-image {
+  width: 100%;
+  aspect-ratio: 16/7;
+  background: var(--color-card-background);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-shapes {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.banner-shapes svg {
+  width: clamp(48px, 10vw, 80px);
+  height: clamp(48px, 10vw, 80px);
+}
+
+/* Détail formation */
+.formation-detail {
+  padding: var(--spacing-2xl) 0;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.formation-detail h3 {
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.formation-detail h3 a {
+  color: inherit;
+  transition: color .2s;
+}
+
+.formation-detail h3 a:hover {
+  color: var(--color-text-secondary);
+}
+
+.formation-meta p {
+  font-size: clamp(0.82rem, 1.5vw, 0.9rem);
+  color: var(--color-text-body);
+  line-height: 1.7;
+  margin-bottom: 4px;
+}
+
+.formation-meta strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+@media (min-width: 640px) {
+  .formations-hero {
+    padding-top: var(--spacing-3xl);
+  }
+  .formation-banner {
+    padding: var(--spacing-3xl) 0;
+  }
+  .formation-detail {
+    padding: var(--spacing-3xl) 0;
+  }
+}
+
 /* ── Contact Page ── */
 .contact-form-section {
   padding: var(--spacing-2xl) 0;
