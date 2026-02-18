@@ -860,7 +860,7 @@ section {
   margin-bottom: var(--spacing-xs);
 }
 
-.formation-attr p {
+.formation-attr-text {
   font-size: clamp(0.82rem, 1.5vw, 0.9rem);
   color: var(--color-text-body);
   line-height: 1.7;
