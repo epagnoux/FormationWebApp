@@ -1,6 +1,35 @@
 // Fichier JavaScript principal pour le site Charlotte®
 // Ajoutez ici vos scripts personnalisés.
 
+// ── Intersection Observer pour les animations au scroll ──
+(function initScrollAnimations() {
+  // Options pour l'Intersection Observer
+  const observerOptions = {
+    root: null, // Utilise la fenêtre comme référence
+    rootMargin: '0px 0px -50px 0px', // Déclenche quand l'élément est à 50px du bas de la fenêtre
+    threshold: 0.1 // Déclenche quand 10% de l'élément est visible
+  };
+
+  // Créer l'observeur
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        // Ajouter la classe 'in-view' quand l'élément devient visible
+        entry.target.classList.add('in-view');
+        // Optionnel: arrêter d'observer après l'animation
+        // observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Éléments à animer
+  const elementsToObserve = document.querySelectorAll('section, .hero, .hero-image, .card, .value-item');
+  
+  elementsToObserve.forEach(function(el) {
+    observer.observe(el);
+  });
+})();
+
 // ── Dark Mode ──
 (function initTheme() {
   const saved = localStorage.getItem('theme');
