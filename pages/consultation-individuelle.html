@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultation individuelle – Charlotte®</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script>
+      (function () {
+        var t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.setAttribute('data-theme', 'dark');
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="../index.html" class="logo">Charlotte®</a>
+        <nav class="nav">
+          <a href="../index.html">Accueil</a>
+          <a href="formations.html">Formations</a>
+          <a href="consultation-individuelle.html">Consultation individuelle</a>
+          <a href="a-propos.html">À propos</a>
+          <a href="contact.html" class="btn btn-dark btn-sm">Contact</a>
+          <button class="theme-toggle" aria-label="Changer le thème"></button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ════ HERO ════ -->
+      <section class="hero formations-hero">
+        <div class="container">
+          <h1>
+            Consultation individuelle<br /><span class="hero-subtitle">Analyse de la pratique professionnelle</span>
+          </h1>
+          <div class="hero-ctas">
+            <a href="contact.html" class="btn btn-dark">Prendre contact</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════ PRÉSENTATION ════ -->
+      <section class="presentation">
+        <div class="container">
+          <h2>
+            Un espace dédié à votre pratique, à votre vécu professionnel et à votre développement personnel.
+          </h2>
+          <p>
+            En cabinet, j'accompagne les professionnels du secteur médico-social et de la petite enfance qui souhaitent
+            prendre du recul sur leur pratique, traversent une période de questionnement ou cherchent à renforcer leur
+            stabilité intérieure dans un contexte exigeant.
+          </p>
+          <p>
+            Grâce à l'EMDR et à l'Intégration du Cycle de la Vie (LI-ICV), j'accompagne également les personnes vers plus
+            d'autonomie et d'apaisement.
+          </p>
+        </div>
+      </section>
+
+      <!-- ════ CARDS ════ -->
+      <section class="cards">
+        <div class="container">
+          <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="card">
+              <div class="card-image icon-grid"></div>
+              <h3>Consultation individuelle</h3>
+              <p>
+                Un espace de parole pour explorer ce qui se joue dans votre pratique, comprendre vos réactions et
+                retrouver du pouvoir d'action au quotidien.
+              </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+              <div class="card-image icon-book"></div>
+              <h3>Analyse de la pratique professionnelle</h3>
+              <p>
+                Un accompagnement structuré pour analyser les situations complexes rencontrées sur le terrain et
+                développer une posture professionnelle plus sécurisante.
+              </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+              <div class="card-image icon-heart"></div>
+              <h3>EMDR & LI-ICV</h3>
+              <p>
+                Des approches thérapeutiques reconnues pour accompagner vers plus d'autonomie, d'apaisement et
+                d'intégration des expériences difficiles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════ DÉTAIL ════ -->
+      <section class="formation-detail">
+        <div class="container">
+          <h3>Pour qui ?</h3>
+          <div class="formation-meta">
+            <div class="formation-attr">
+              <div class="formation-attr-icon icon-users"></div>
+              <strong>Public</strong>
+              <div class="formation-attr-text">
+                Professionnels du médico-social, de la petite enfance, éducateurs, soignants, encadrants, et toute
+                personne souhaitant travailler sur son rapport à la relation professionnelle.
+              </div>
+            </div>
+            <div class="formation-attr">
+              <div class="formation-attr-icon icon-target"></div>
+              <strong>Objectifs</strong>
+              <div class="formation-attr-text">
+                Comprendre ce qui s'active en soi dans les situations complexes, retrouver du pouvoir d'action,
+                sécuriser sa posture professionnelle et avancer vers plus d'apaisement.
+              </div>
+            </div>
+            <div class="formation-attr">
+              <div class="formation-attr-icon icon-star"></div>
+              <strong>Approches utilisées</strong>
+              <div class="formation-attr-text">
+                Psychologie clinique, régulation du système nerveux, EMDR, Intégration du Cycle de la Vie (LI-ICV),
+                psychotrauma et attachement.
+              </div>
+            </div>
+            <div class="formation-attr">
+              <div class="formation-attr-icon icon-calendar"></div>
+              <strong>Format</strong>
+              <div class="formation-attr-text">Séances individuelles en cabinet. Fréquence et durée adaptées à vos besoins.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════ CTA ════ -->
+      <section class="cta-section">
+        <div class="container">
+          <h2>Un premier échange pour se rencontrer.</h2>
+          <p>Contactez-moi pour échanger sur votre situation et voir comment je peux vous accompagner.</p>
+          <a href="contact.html" class="btn btn-dark">Prendre contact</a>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-include"></div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
