@@ -11,7 +11,11 @@
   --color-text-primary: #4a77a5; /*#61a5bb;  #1a1a1a;  #7ea1b8 */
   --color-text-secondary: #61a5bb; /* #7ea1b8 */
   --color-text-action: #61a5bb; /* #7ea1b8 */
-  --color-text-on-dark: #fff;
+  --color-text-on-dark: #666;
+  --color-text-primary-static: #fff;
+
+  --color-theme-primary: #007afc;
+  --color-theme-secondary: #c8cdd1;
 
   /* Texte */
   --color-text-nav: #444;
@@ -22,7 +26,7 @@
 
   /* Bordures et backgrounds */
 
-  --color-border-light: #dadada;
+  --color-border-light: #cdcdcd;
   --color-icon-svg: #bbb;
 
   --color-button-hover-bg: #f5f5f5;
@@ -30,7 +34,7 @@
   /* Cards */
   --color-card-background: #f2f2f2;
   --color-card-section: #e0e3e8; /* #cdd5e0;  #61a5bb;  #7ea1b8 */ /* États */
-  --color-button-dark-hover: #333;
+  --color-button-dark-hover: #3095ff;
   --color-hover-dark: #000;
 
   /* Dark mode toggle */
@@ -50,14 +54,18 @@
 /* ── Dark Mode ── */
 [data-theme="dark"] {
   --color-background: #161616;
-  --color-text-primary: #007afc;
-  --color-text-on-dark: #ffffff;
+  --color-text-primary: #ffffff;
+  --color-text-on-dark: #b0b0b0;
+  --color-text-primary-static: #fff;
+  --color-theme-primary: #007afc;
+  --color-theme-secondary: #c8cdd1;
+
   --color-text-nav: #ccc;
   --color-text-body: #b0b0b0;
-  --color-text-secondary: #a0a0a0;
+  --color-text-secondary: #f5f5f5;
   --color-text-muted: #888;
   --color-text-very-muted: #777;
-  --color-border-light: #222;
+  --color-border-light: #2c2c2c;
   --color-icon-svg: #555;
   --color-card-background: #292926;
   --color-card-section: #1e1e1e;
@@ -178,7 +186,13 @@ ul {
   color: var(--color-hover-dark);
 }
 .nav .btn-dark {
-  color: var(--color-text-on-dark);
+  /* color: var(--color-text-on-dark); */
+  color: var(--color-text-primary-static);
+}
+
+.nav .btn-dark:hover {
+  /* color: var(--color-text-on-dark); */
+  color: var(--color-text-primary-static);
 }
 
 /* Tablet and Desktop */
@@ -207,19 +221,20 @@ ul {
   flex-shrink: 0;
 }
 .btn-dark {
-  background: var(--color-text-primary);
-  color: var(--color-text-on-dark);
+  background: var(--color-theme-primary);
+  color: var(--color-text-primary-static);
 }
 .btn-dark:hover {
   background: var(--color-button-dark-hover);
 }
 .btn-outline {
   background: transparent;
-  color: var(--color-text-primary);
-  border: 1.5px solid var(--color-text-primary);
+  color: var(--color-text-on-dark);
+  border: 1.5px solid var(--color-text-secondary);
 }
 .btn-outline:hover {
-  background: var(--color-button-hover-bg);
+  color: var(--color-button-dark-hover);
+  border: 1.5px solid var(--color-button-dark-hover);
 }
 .btn-sm {
   padding: 8px 20px;
@@ -418,7 +433,7 @@ section {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 2.4rem 0;
+  padding: 2.4rem;
   border-radius: 2.4rem;
   background: fixed var(--color-card-section);
 }
@@ -463,6 +478,7 @@ section {
   grid-template-columns: 1fr;
   gap: var(--spacing-lg);
   text-align: center;
+  width: 100%;
 }
 
 /* Tablet: 2 columns */
@@ -506,7 +522,7 @@ section {
 .value-icon svg {
   width: 36px;
   height: 36px;
-  stroke: var(--color-text-primary);
+  stroke: var(--color-theme-primary);
   fill: none;
   stroke-width: 1.5;
   overflow: visible;
@@ -556,7 +572,8 @@ section {
 /* ── Footer ── */
 .footer {
   padding: var(--spacing-2xl) 0 var(--spacing-lg);
-  background: var(--color-card-section);
+
+  /* background: var(--color-card-section); */
   display: flex;
   justify-content: center;
   margin: 0 3.6rem 3.6rem 3.6rem;
@@ -568,6 +585,8 @@ section {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-lg);
+  border-top: 1px solid var(--color-border-light);
+  padding-top: var(--spacing-lg);
 }
 
 /* Tablet: 2 columns */
@@ -760,7 +779,7 @@ section {
 
 @media (min-width: 640px) {
   .legal-section:first-child {
-    padding-top: var(--spacing-3xl);
+    /* padding-top: var(--spacing-3xl); */
   }
 }
 
@@ -1168,7 +1187,7 @@ section {
 .icon-book,
 .icon-heart,
 .icon-wrench {
-  background-color: var(--color-text-primary);
+  background-color: var(--color-theme-primary);
   -webkit-mask-size: 36px 36px;
   mask-size: 36px 36px;
   -webkit-mask-repeat: no-repeat;
