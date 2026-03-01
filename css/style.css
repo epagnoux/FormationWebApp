@@ -305,7 +305,7 @@ h6 {
 
 .hero-image {
   display: flex;
-  height: 60vh;
+  height: 55vh;
   margin: 0 2.4rem 2.4rem 0;
   margin: 0 3.6rem;
   margin-bottom: var(--spacing-lg);
