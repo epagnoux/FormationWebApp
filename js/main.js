@@ -22,12 +22,27 @@
     });
   }, observerOptions);
 
-  // Éléments à animer
-  const elementsToObserve = document.querySelectorAll('section, .hero, .hero-image, .card, .card-image, .value-item');
-  
+  // Éléments à animer (ciblage précis pour éviter les conflits d'opacité parent/enfant)
+  const elementsToObserve = document.querySelectorAll(
+    '.hero-image, .presentation, .cta-section, .card, .value-item, ' +
+    '.formations-hero, .formation-banner, .formation-detail, ' +
+    '.contact-intro, .contact-form-section, .contact-info, ' +
+    '.page-content, .legal-section'
+  );
+
   elementsToObserve.forEach(function(el) {
     observer.observe(el);
   });
+})();
+
+// ── Header : effet verre dépoli au scroll ──
+(function initHeaderScroll() {
+  var header = document.querySelector('.header');
+  if (!header) return;
+
+  window.addEventListener('scroll', function () {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
 })();
 
 // ── Dark Mode ──
