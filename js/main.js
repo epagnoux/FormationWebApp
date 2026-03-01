@@ -25,13 +25,37 @@
   // Éléments à animer (ciblage précis pour éviter les conflits d'opacité parent/enfant)
   const elementsToObserve = document.querySelectorAll(
     '.hero-image, .presentation, .cta-section, .card, .value-item, ' +
-    '.formations-hero, .formation-banner, .formation-detail, ' +
+    '.formations-hero, .formation-banner, ' +
     '.contact-intro, .contact-form-section, .contact-info, ' +
     '.page-content, .legal-section'
   );
 
   elementsToObserve.forEach(function(el) {
     observer.observe(el);
+  });
+})();
+
+// ── Formation meta : révélation séquentielle type Apple ──
+(function initFormationMetaAnimation() {
+  var metas = document.querySelectorAll('.formation-meta');
+  if (!metas.length) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var attrs = entry.target.querySelectorAll('.formation-attr');
+        attrs.forEach(function(attr, i) {
+          setTimeout(function() {
+            attr.classList.add('in-view');
+          }, i * 110);
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -60px 0px', threshold: 0.05 });
+
+  metas.forEach(function(meta) {
+    observer.observe(meta);
   });
 })();
 

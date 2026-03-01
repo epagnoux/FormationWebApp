@@ -163,12 +163,16 @@ ul {
 .header {
   position: sticky;
   top: 0;
-  background: var(--color-background);
+  margin: 0 calc(var(--spacing-lg) * -1);
+  -webkit-backdrop-filter: blur(0px) saturate(100%);
+  backdrop-filter: blur(0px) saturate(100%);
+  background: transparent;
   transition:
+    background-color 0.4s ease-out,
     box-shadow 0.4s ease-out,
-    background-color 0.4s ease-out;
+    backdrop-filter 0.4s ease-out,
+    -webkit-backdrop-filter 0.4s ease-out;
   z-index: 100;
-  /* border-bottom: 1px solid var(--color-border-light); */
 }
 
 .header .container {
@@ -1384,7 +1388,14 @@ section {
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   backdrop-filter: blur(20px) saturate(180%);
   background-color: var(--color-background-transparent);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.07);
+}
+
+/* Sur les pages sans hero (pas de contenu visuellement dense derrière le header),
+   on applique directement le fond pour éviter un header illisible */
+
+.page-without-hero .header {
+  background-color: var(--color-background);
 }
 
 /* ── Nav links : underline sweep gauche→droite ── */
@@ -1397,8 +1408,8 @@ section {
   position: absolute;
   top: auto;
   left: 0;
-  bottom: -2px;
-  height: 1.5px;
+  bottom: -0.2rem;
+  height: 0.15rem;
   width: 100%;
   background-color: currentColor;
   content: '';
@@ -1431,12 +1442,9 @@ section {
 
 /* ── Scroll reveal : états initiaux masqués ── */
 @media (prefers-reduced-motion: no-preference) {
-  .hero-image,
   .presentation,
   .cta-section,
-  .formations-hero,
   .formation-banner,
-  .formation-detail,
   .contact-intro,
   .contact-form-section,
   .contact-info,
@@ -1446,7 +1454,25 @@ section {
     transition:
       opacity 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94),
       translate 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    translate: 0 28px;
+    translate: 0 2.8rem;
+  }
+
+  /* Héros : fondu simple, sans déplacement */
+
+  .hero-image,
+  .formations-hero {
+    opacity: 0;
+    transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Attributs formation : apparition séquentielle type Apple */
+
+  .formation-attr {
+    opacity: 0;
+    transition:
+      opacity 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      translate 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    translate: 0 2rem;
   }
 
   .card,
@@ -1459,7 +1485,7 @@ section {
       translate 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
       transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
       box-shadow 0.3s ease-out;
-    translate: 0 20px;
+    translate: 0 2rem;
   }
 
   /* Délais échelonnés — grille 3 cols (cards) */
@@ -1506,14 +1532,14 @@ section {
   .cta-section.in-view,
   .formations-hero.in-view,
   .formation-banner.in-view,
-  .formation-detail.in-view,
   .contact-intro.in-view,
   .contact-form-section.in-view,
   .contact-info.in-view,
   .page-content.in-view,
   .legal-section.in-view,
   .card.in-view,
-  .value-item.in-view {
+  .value-item.in-view,
+  .formation-attr.in-view {
     opacity: 1;
     pointer-events: auto;
     translate: 0 0;
@@ -1523,11 +1549,11 @@ section {
 /* ── Hover : lift et ombre sur les cartes ── */
 @media (hover: hover) and (pointer: fine) {
   .card.in-view:hover {
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.09);
-    transform: translateY(-5px);
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.09);
+    transform: translateY(-0.5rem);
   }
 
   .value-item.in-view:hover {
-    transform: translateY(-3px);
+    transform: translateY(-0.3rem);
   }
 }
