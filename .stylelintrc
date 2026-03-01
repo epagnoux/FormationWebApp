@@ -1,0 +1,71 @@
+{
+  "extends": "stylelint-config-recommended-less",
+  "plugins": ["stylelint-order"],
+  "rules": {
+
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["first-nested"]
+      }
+    ],
+    "selector-pseudo-element-no-unknown": null,
+    "less/no-duplicate-variables": null,
+    "no-descending-specificity": null,
+    "at-rule-no-unknown": null,
+    "property-no-unknown": null,
+    "selector-class-pattern": null,
+    "order/order": ["custom-properties", "dollar-variables", "declarations", "rules", "at-rules"],
+    "order/properties-order": [
+      [
+        "flex",
+        "display",
+        "flex-direction",
+        "flex-wrap",
+        "justify-content",
+        "align-items",
+        "align-content",
+        "position",
+        "top",
+        "left",
+        "right",
+        "bottom",
+        "grid-gap",
+        "grid-template-columns",
+        "grid-template-rows",
+        "grid-column-start",
+        "grid-column-end",
+        "grid-row-start",
+        "grid-row-end",
+        "height",
+        "width",
+        "min-height",
+        "max-height",
+        "min-width",
+        "max-width",
+        "margin",
+        "margin-left",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "padding",
+        "padding-left",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "font-size",
+        "font-style",
+        "font-weight",
+        "line-height",
+        "letter-spacing",
+        "text-transform",
+        "color",
+        ".html",
+        "text-.html"
+      ],
+      {
+        "unspecified": "bottomAlphabetical"
+      }
+    ]
+  }
+}

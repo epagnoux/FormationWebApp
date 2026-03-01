@@ -1,0 +1,7 @@
+*.json
+*.yml
+coverage
+dist
+node_modules
+src/app/course-editor/generated
+src/appSettings.js

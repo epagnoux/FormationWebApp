@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "saveAllFiles",
+      "type": "shell",
+      "command": "${command:workbench.action.files.saveAll}", // You can replace this with an actual command
+      "args": ["Saved all files before launch."],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
