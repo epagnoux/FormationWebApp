@@ -6,7 +6,7 @@
   // Options pour l'Intersection Observer
   const observerOptions = {
     root: null, // Utilise la fenêtre comme référence
-    rootMargin: '0px 0px -50px 0px', // Déclenche quand l'élément est à 50px du bas de la fenêtre
+    rootMargin: '0px 0px -200px 0px', // Déclenche quand l'élément est à 200px du bas de la fenêtre
     threshold: 0.1 // Déclenche quand 10% de l'élément est visible
   };
 
@@ -23,7 +23,7 @@
   }, observerOptions);
 
   // Éléments à animer
-  const elementsToObserve = document.querySelectorAll('section, .hero, .hero-image, .card, .value-item');
+  const elementsToObserve = document.querySelectorAll('section, .hero, .hero-image, .card, .card-image, .value-item');
   
   elementsToObserve.forEach(function(el) {
     observer.observe(el);
