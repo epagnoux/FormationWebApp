@@ -21,7 +21,6 @@
   --color-text-very-muted: #999;
 
   /* Bordures et backgrounds */
-  --color-border-subtle: red;
 
   --color-border-light: #dadada;
   --color-icon-svg: #bbb;
@@ -30,9 +29,7 @@
 
   /* Cards */
   --color-card-background: #f2f2f2;
-  --color-card-section: #cdd5e0; /* #61a5bb;  #7ea1b8 */
-
-  /* États */
+  --color-card-section: #e0e3e8; /* #cdd5e0;  #61a5bb;  #7ea1b8 */ /* États */
   --color-button-dark-hover: #333;
   --color-hover-dark: #000;
 
@@ -53,19 +50,19 @@
 /* ── Dark Mode ── */
 [data-theme="dark"] {
   --color-background: #161616;
-  --color-text-primary: #e8e8e8;
-  --color-text-on-dark: #121212;
+  --color-text-primary: #007afc;
+  --color-text-on-dark: #ffffff;
   --color-text-nav: #ccc;
   --color-text-body: #b0b0b0;
   --color-text-secondary: #a0a0a0;
   --color-text-muted: #888;
   --color-text-very-muted: #777;
-  --color-border-subtle: #2a2a2a;
   --color-border-light: #222;
   --color-icon-svg: #555;
-  --color-card-background: #1e1e1e;
+  --color-card-background: #292926;
+  --color-card-section: #1e1e1e;
   --color-button-hover-bg: #2a2a2a;
-  --color-button-dark-hover: #ddd;
+  --color-button-dark-hover: #3095ff;
   --color-hover-dark: #fff;
   --color-toggle-bg: #444;
   --color-toggle-knob: #e8e8e8;
@@ -92,6 +89,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  position: absolute;
+  inset: 0;
+  padding: 0 var(--spacing-lg);
   /* background: url("../images/backgroud.webp") top/cover no-repeat; */
   /* background: linear-gradient(360deg, #a6bfc3 0%, #eeeeee 100%); */
 }
@@ -113,27 +113,27 @@ ul {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  /* padding: 0 var(--spacing-md); */
 }
 
 /* Mobile: sm */
 @media (min-width: 640px) {
   .container {
-    padding: 0 var(--spacing-md);
+    /* padding: 0 var(--spacing-md); */
   }
 }
 
 /* Tablet: md */
 @media (min-width: 768px) {
   .container {
-    padding: 0 var(--spacing-lg);
+    /* padding: 0 var(--spacing-lg); */
   }
 }
 
 /* Desktop: lg */
 @media (min-width: 1024px) {
   .container {
-    padding: 0 var(--spacing-lg);
+    /* padding: 0 var(--spacing-lg); */
   }
 }
 
@@ -412,12 +412,22 @@ section {
   color: var(--color-icon-svg);
   overflow: visible;
 }
+.card-features {
+  /* background: var(--color-card-background); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2.4rem 0;
+  border-radius: 2.4rem;
+  background: fixed var(--color-card-section);
+}
+
 .card-feature {
   width: 100%;
   aspect-ratio: 4/3;
   background: var(--color-card-background);
   border-radius: 16px;
-  margin-bottom: var(--spacing-md);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -439,14 +449,12 @@ section {
 
 /* ── Values (4 cols) ── */
 .values {
-  padding: var(--spacing-2xl) 0;
-  /* border-top: 1px solid var(--color-border-subtle); */
-  /* border-bottom: 1px solid var(--color-border-subtle); */
-  background: fixed var(--color-card-section);
-  display: flex;
-  justify-content: center;
-  margin: 0 3.6rem 3.6rem 3.6rem;
-  border-radius: 24px;
+  padding: var(--spacing-3xl) 0;
+  /* background: fixed var(--color-card-section); */
+  /* display: flex;
+  justify-content: center; */
+  /* margin: 0 3.6rem 3.6rem 3.6rem; */
+  /* border-radius: 24px; */
 }
 
 /* Mobile First: 1 column */
@@ -548,8 +556,6 @@ section {
 /* ── Footer ── */
 .footer {
   padding: var(--spacing-2xl) 0 var(--spacing-lg);
-  /* border-top: 1px solid var(--color-border-subtle); */
-  /* background: var(--color-card-background); */
   background: var(--color-card-section);
   display: flex;
   justify-content: center;
@@ -835,7 +841,6 @@ section {
 /* Détail formation */
 .formation-detail {
   padding: var(--spacing-2xl) 0;
-  border-top: 1px solid var(--color-border-subtle);
 }
 
 .formation-detail h3 {
@@ -939,7 +944,6 @@ section {
 
 .formation-attr.formation-attr-highlight {
   background: var(--color-card-background);
-  border: 1px solid var(--color-border-subtle);
   border-radius: 8px;
   padding: var(--spacing-md);
 }
@@ -1035,7 +1039,6 @@ section {
 /* Parlons de vos besoins */
 .contact-intro {
   padding: var(--spacing-2xl) 0;
-  border-top: 1px solid var(--color-border-subtle);
 }
 
 .contact-intro h2 {
@@ -1063,7 +1066,6 @@ section {
 /* Coordonnées */
 .contact-info {
   padding: var(--spacing-2xl) 0;
-  border-top: 1px solid var(--color-border-subtle);
 }
 
 .contact-info h3 {
