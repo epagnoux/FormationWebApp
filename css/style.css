@@ -33,13 +33,19 @@
 
   /* Cards */
   --color-card-background: #f2f2f2;
-  --color-card-section: #e0e3e8; /* #cdd5e0;  #61a5bb;  #7ea1b8 */ /* États */
+  --color-card-section: #d1d7df; /*  #e0e3e8;  #cdd5e0;  #61a5bb;  #7ea1b8 */
   --color-button-dark-hover: #3095ff;
   --color-hover-dark: #000;
 
   /* Dark mode toggle */
   --color-toggle-bg: #e0e0e0;
   --color-toggle-knob: #fff;
+
+  /* Gradient background */
+  /* --color-background-gradient: linear-gradient(160deg, #dce8f5 0%, #e7e9ec 45%, #c8d8e8 100%); */
+  --color-background-gradient: linear-gradient(160deg, #bbccdedb 0%, #e5e6e6 45%, #c8d8e84d 100%);
+  /* --color-background-gradient: linear-gradient(160deg, #bbccdedb 0%, #e7e9ec 45%, #c8d8e84d 100%); */
+  /* gradient(160deg, #bbccdedb 0%, #e7e9ec 45%, #c8d8e84d 100%); */
 
   /* Transparent backgrounds (frosted glass) */
   --color-background-transparent: rgba(231, 233, 236, 0.82);
@@ -71,14 +77,16 @@
   --color-text-very-muted: #777;
   --color-border-light: #2c2c2c;
   --color-icon-svg: #555;
-  --color-card-background: #292926;
-  --color-card-section: #1e1e1e;
+  --color-card-background: #262729; /* #292926 */
+  --color-card-section: #1d1e1f; /* #1e1e1e */
   --color-button-hover-bg: #2a2a2a;
   --color-button-dark-hover: #3095ff;
   --color-hover-dark: #fff;
   --color-toggle-bg: #444;
   --color-toggle-knob: #e8e8e8;
   --color-background-transparent: rgba(22, 22, 22, 0.82);
+  /* --color-background-gradient: linear-gradient(160deg, #1a2030 0%, #161616 45%, #0d1a24 100%); */
+  --color-background-gradient: linear-gradient(139deg, #22293d 0%, #171717 45%, #171717 65%, #1c2336 100%);
 }
 
 /* ── Reset & Base ── */
@@ -101,13 +109,11 @@ body {
   flex-direction: column;
   padding: 0 var(--spacing-lg);
   line-height: 1.6;
-  color: var(--color-text-primary);
-  background: var(--color-background);
+  /* color: var(--color-text-primary); */
+  background: var(--color-background-gradient) fixed;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: url("../images/backgroud.webp") top/cover no-repeat; */
-  /* background: linear-gradient(360deg, #a6bfc3 0%, #eeeeee 100%); */
 }
 
 a {
@@ -184,6 +190,7 @@ ul {
   font-size: 1.84rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  color: var(--color-text-primary);
   flex-shrink: 0;
 }
 
@@ -279,7 +286,9 @@ h3,
 h4,
 h5,
 h6 {
-  background: linear-gradient(135deg, #4a85db 0%, #61a5bb 100%);
+  /* background: linear-gradient(135deg, #4a85db 0%, #61a5bb 100%); */
+  background: linear-gradient(135deg, #4a85db 0%, #69b4cd 100%);
+  /* background: linear-gradient(135deg, #4a85db 0%, #679faa 50%, #8ec8cd 100%) */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
