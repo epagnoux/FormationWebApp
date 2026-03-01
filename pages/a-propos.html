@@ -1,52 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À propos – Charlotte®</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <script>
-    (function(){var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);else if(window.matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.setAttribute("data-theme","dark")})();
-  </script>
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <a href="../index.html" class="logo">Charlotte®</a>
-      <nav class="nav">
-        <a href="../index.html">Accueil</a>
-        <a href="formations.html">Formations</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="contact.html" class="btn btn-dark btn-sm">Contact</a>
-        <button class="theme-toggle" aria-label="Changer le thème"></button>
-      </nav>
-    </div>
-  </header>
-  <main class="page-content legal-page">
-
-    <!-- Présentation -->
-    <section class="legal-section">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos – Charlotte®</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script>
+      (function () {
+        var t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.setAttribute('data-theme', 'dark');
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="header">
       <div class="container">
-        <h1>Charlotte Pagnoux<br><span class="about-subtitle">Psychologue</span></h1>
-        <p>Depuis plus de 15 ans, j'accompagne des personnes et des équipes du secteur médico-social confrontées à des situations complexes et humaines. Mon parcours m'a enrichie de rencontres, d'interventions en institution, et d'une compréhension fine des enjeux du terrain.</p>
-        <p>Mon approche se veut pédagogique et accessible&nbsp;: rendre les concepts de la psychologie concrets pour les professionnels. Je transmets des outils pour mieux comprendre les réactions émotionnelles et favoriser la régulation du système nerveux, en particulier grâce à l'Intégration du Cycle de la Vie (ICV).</p>
-        <p>Valeurs-clés&nbsp;: authenticité, engagement et respect de la singularité de chacun. Ma spécialisation en psychotrauma m'amène à proposer des formations adaptées aux besoins spécifiques des équipes et des familles, dans une posture d'écoute et d'accompagnement bienveillant.</p>
-      </div>
-    </section>
-
-    <!-- Découvrir -->
-    <section class="legal-section">
-      <div class="container">
-        <p class="about-discover-label">Découvrir&nbsp;:</p>
-        <div class="about-ctas">
-          <a href="contact.html" class="btn btn-outline btn-sm">Demander un devis</a>
+        <a href="../index.html" class="logo">Charlotte®</a>
+        <nav class="nav">
+          <a href="../index.html">Accueil</a>
+          <a href="formations.html">Formations</a>
+          <a href="a-propos.html">À propos</a>
           <a href="contact.html" class="btn btn-dark btn-sm">Contact</a>
-        </div>
+          <button class="theme-toggle" aria-label="Changer le thème"></button>
+        </nav>
       </div>
-    </section>
+    </header>
+    <main class="page-content legal-page">
+      <!-- Présentation -->
+      <section class="legal-section">
+        <div class="container">
+          <h1>Charlotte Pagnoux<br /><span class="about-subtitle">Psychologue</span></h1>
+          <p>
+            Depuis plus de 15 ans, j'accompagne des personnes et des équipes du secteur médico-social confrontées à des situations
+            complexes et humaines. Mon parcours m'a enrichie de rencontres, d'interventions en institution, et d'une compréhension
+            fine des enjeux du terrain.
+          </p>
+          <p>
+            Mon approche se veut pédagogique et accessible&nbsp;: rendre les concepts de la psychologie concrets pour les
+            professionnels. Je transmets des outils pour mieux comprendre les réactions émotionnelles et favoriser la régulation du
+            système nerveux, en particulier grâce à l'Intégration du Cycle de la Vie (ICV).
+          </p>
+          <p>
+            Valeurs-clés&nbsp;: authenticité, engagement et respect de la singularité de chacun. Ma spécialisation en psychotrauma
+            m'amène à proposer des formations adaptées aux besoins spécifiques des équipes et des familles, dans une posture
+            d'écoute et d'accompagnement bienveillant.
+          </p>
+        </div>
+      </section>
 
-  </main>
-  <div id="footer-include"></div>
+      <!-- Découvrir -->
+      <section class="legal-section">
+        <div class="container">
+          <p class="about-discover-label">Découvrir&nbsp;:</p>
+          <div class="about-ctas">
+            <a href="contact.html" class="btn btn-outline btn-sm">Demander un devis</a>
+            <a href="contact.html" class="btn btn-dark btn-sm">Contact</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer-include"></div>
     <script src="../js/main.js"></script>
-</body>
+  </body>
 </html>

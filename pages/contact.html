@@ -1,73 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact – Charlotte®</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <script>
-    (function(){var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);else if(window.matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.setAttribute("data-theme","dark")})();
-  </script>
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <a href="../index.html" class="logo">Charlotte®</a>
-      <nav class="nav">
-        <a href="../index.html">Accueil</a>
-        <a href="formations.html">Formations</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="contact.html" class="btn btn-dark btn-sm">Contact</a>
-        <button class="theme-toggle" aria-label="Changer le thème"></button>
-      </nav>
-    </div>
-  </header>
-  <main class="page-content">
-
-    <!-- Formulaire de contact -->
-    <section class="contact-form-section">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – Charlotte®</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script>
+      (function () {
+        var t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.setAttribute('data-theme', 'dark');
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="header">
       <div class="container">
-        <form class="contact-form" action="#" method="post">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+        <a href="../index.html" class="logo">Charlotte®</a>
+        <nav class="nav">
+          <a href="../index.html">Accueil</a>
+          <a href="formations.html">Formations</a>
+          <a href="a-propos.html">À propos</a>
+          <a href="contact.html" class="btn btn-dark btn-sm">Contact</a>
+          <button class="theme-toggle" aria-label="Changer le thème"></button>
+        </nav>
+      </div>
+    </header>
+    <main class="page-content">
+      <!-- Formulaire de contact -->
+      <section class="contact-form-section">
+        <div class="container">
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="jane@framer.com" required />
+              </div>
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="jane@framer.com" required>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark btn-form">Nom, email, message</button>
-        </form>
-      </div>
-    </section>
+            <button type="submit" class="btn btn-dark btn-form">Nom, email, message</button>
+          </form>
+        </div>
+      </section>
 
-    <!-- Parlons de vos besoins -->
-    <section class="contact-intro">
-      <div class="container">
-        <h2>Parlons de vos besoins.</h2>
-        <p>Construisons ensemble une formation adaptée à vos équipes et à vos enjeux. Chaque accompagnement commence par une écoute attentive de vos besoins, dans un esprit de bienveillance et de collaboration.</p>
-        <p>Contactez-moi pour toute question, pour demander un devis ou simplement échanger sur un projet. J'ai à cœur de vous apporter une réponse personnalisée, concrète et humaine.</p>
-      </div>
-    </section>
+      <!-- Parlons de vos besoins -->
+      <section class="contact-intro">
+        <div class="container">
+          <h2>Parlons de vos besoins.</h2>
+          <p>
+            Construisons ensemble une formation adaptée à vos équipes et à vos enjeux. Chaque accompagnement commence par une écoute
+            attentive de vos besoins, dans un esprit de bienveillance et de collaboration.
+          </p>
+          <p>
+            Contactez-moi pour toute question, pour demander un devis ou simplement échanger sur un projet. J'ai à cœur de vous
+            apporter une réponse personnalisée, concrète et humaine.
+          </p>
+        </div>
+      </section>
 
-    <!-- Coordonnées -->
-    <section class="contact-info">
-      <div class="container">
-        <h3>Coordonnées</h3>
-        <p class="contact-name">Charlotte Pagnoux</p>
-        <p class="contact-role">Psychologue – Formatrice</p>
-        <p class="contact-phone">Téléphone : <a href="tel:+33767678690">07 67 67 86 90</a></p>
-      </div>
-    </section>
-
-  </main>
-  <div id="footer-include"></div>
+      <!-- Coordonnées -->
+      <section class="contact-info">
+        <div class="container">
+          <h3>Coordonnées</h3>
+          <p class="contact-name">Charlotte Pagnoux</p>
+          <p class="contact-role">Psychologue – Formatrice</p>
+          <p class="contact-phone">Téléphone : <a href="tel:+33767678690">07 67 67 86 90</a></p>
+        </div>
+      </section>
+    </main>
+    <div id="footer-include"></div>
     <script src="../js/main.js"></script>
-</body>
+  </body>
 </html>
