@@ -1,24 +1,36 @@
 {
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "less"
+  ],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+  "debug.saveBeforeStart": "allEditorsInActiveGroup",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "sonarlint.connectedMode.project": {
+    "connectionId": "SentinelWebPortal",
+    "projectKey": "SentinelWebPortal"
   },
-  "[css]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.stylelint": "explicit"
-    }
-  },
-  "stylelint.enable": true,
-  "stylelint.validate": ["css", "less"],
-  "stylelint.showErrorMessage": true
+  "terminal.integrated.enablePersistentSessions": false,
+  "WhiteSource Advise.Diff.BaseBranch": "main",
+  "search.followSymlinks": false,
+  "cSpell.words": [
+    "gsap",
+    "launchdarkly",
+    "msal"
+  ]
 }

@@ -182,8 +182,8 @@ ul {
 /* Navigation - Mobile First */
 
 .nav {
-  display: flex; 
-   flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   gap: var(--spacing-sm);
@@ -227,6 +227,7 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 10px 24px;
+
   font-size: 0.9rem;
   font-weight: 600;
   border: none;
@@ -627,7 +628,6 @@ section {
 /* ── Footer ── */
 
 .footer {
-
   /* background: var(--color-card-section); */
   display: flex;
   justify-content: center;

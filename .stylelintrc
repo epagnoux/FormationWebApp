@@ -2,7 +2,6 @@
   "extends": "stylelint-config-recommended-less",
   "plugins": ["stylelint-order"],
   "rules": {
-
     "rule-empty-line-before": [
       "always-multi-line",
       {
