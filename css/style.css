@@ -10,7 +10,6 @@
   /* Bases */
   --color-background: #e7e9ec; /*  #fff; */
   --color-text-primary: #4a77a5; /*#61a5bb;  #1a1a1a;  #7ea1b8 */
-  --color-text-secondary: #61a5bb; /* #7ea1b8 */
   --color-text-action: #61a5bb; /* #7ea1b8 */
   --color-text-on-dark: #666;
   --color-text-primary-static: #fff;
@@ -227,7 +226,6 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 10px 24px;
-
   font-size: 0.9rem;
   font-weight: 600;
   border: none;
