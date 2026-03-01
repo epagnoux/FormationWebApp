@@ -274,6 +274,20 @@ ul {
   font-size: 1.36rem;
 }
 
+/* ── Typographie : dégradé sur les titres (Apple style) ── */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background: linear-gradient(135deg, #4a85db 0%, #61a5bb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* ── Hero ── */
 
 .hero {
@@ -1543,17 +1557,5 @@ section {
     opacity: 1;
     pointer-events: auto;
     translate: 0 0;
-  }
-}
-
-/* ── Hover : lift et ombre sur les cartes ── */
-@media (hover: hover) and (pointer: fine) {
-  .card.in-view:hover {
-    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.09);
-    transform: translateY(-0.5rem);
-  }
-
-  .value-item.in-view:hover {
-    transform: translateY(-0.3rem);
   }
 }
