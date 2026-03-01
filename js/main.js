@@ -126,10 +126,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Déclencher les animations du hero au chargement (sur la home page, le hero est visible)
+  // Ajouter un délai court pour que Safari ait le temps de faire le rendu
   if (!isInPages) {
-    var heroElements = document.querySelectorAll('.hero h1, .hero p, .hero-ctas .btn');
-    heroElements.forEach(function(el) {
-      el.classList.add('in-view');
-    });
+    setTimeout(function() {
+      var heroElements = document.querySelectorAll('.hero h1, .hero p, .hero-ctas .btn');
+      heroElements.forEach(function(el) {
+        el.classList.add('in-view');
+      });
+    }, 100);
   }
 });
