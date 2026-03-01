@@ -124,4 +124,12 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(html => { footerTarget.innerHTML = html; })
       .catch(error => console.error('Erreur:', error));
   }
+
+  // Déclencher les animations du hero au chargement (sur la home page, le hero est visible)
+  if (!isInPages) {
+    var heroElements = document.querySelectorAll('.hero h1, .hero p, .hero-ctas .btn');
+    heroElements.forEach(function(el) {
+      el.classList.add('in-view');
+    });
+  }
 });
