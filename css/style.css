@@ -99,7 +99,6 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  position: absolute;
   padding: 0 var(--spacing-lg);
   line-height: 1.6;
   color: var(--color-text-primary);
@@ -107,8 +106,6 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  inset: 0;
-  overflow-x: hidden;
   /* background: url("../images/backgroud.webp") top/cover no-repeat; */
   /* background: linear-gradient(360deg, #a6bfc3 0%, #eeeeee 100%); */
 }
@@ -172,7 +169,7 @@ ul {
     box-shadow 0.4s ease-out,
     backdrop-filter 0.4s ease-out,
     -webkit-backdrop-filter 0.4s ease-out;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .header .container {
@@ -1402,7 +1399,7 @@ section {
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   backdrop-filter: blur(20px) saturate(180%);
   background-color: var(--color-background-transparent);
-  box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0.1rem 0 var(--color-border-light);
 }
 
 /* Sur les pages sans hero (pas de contenu visuellement dense derrière le header),
