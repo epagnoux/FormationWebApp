@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "less": "lessc css/style.less css/style.css",
-    "less:watch": "less-watch-compiler css css"
+    "less": "lessc style/style.less css/style.css",
+    "less:watch": "less-watch-compiler style css"
   },
   "dependencies": {
     "stylelint": "^17.4.0"

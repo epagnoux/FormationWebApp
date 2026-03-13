@@ -1156,6 +1156,19 @@ section {
 .formations-hero {
   padding-top: var(--spacing-2xl);
 }
+.formations-hero-overflow {
+  position: absolute;
+  background: url('../images/formation-header.jpeg') top / cover no-repeat;
+  background-attachment: initial;
+  background-size: contain;
+  filter: blur(0.8rem);
+  inset: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+.formations-hero .container {
+  margin-top: 56rem;
+}
 .formations-hero h1 {
   text-align: center;
 }

@@ -97,6 +97,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#header-include {
+  display: contents;
+}
+p {
+  max-width: 56rem;
+  margin-bottom: var(--spacing-sm);
+  font-size: clamp(1.408rem, 2vw, 1.52rem);
+  line-height: 1.7;
+  color: var(--color-text-body);
+  text-align: left;
+}
+p:last-child {
+  margin-bottom: 0;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -281,6 +295,9 @@ h1 {
   padding-bottom: var(--spacing-lg);
   text-align: center;
 }
+.hero .container {
+  margin-top: 62rem;
+}
 .hero h1 {
   max-width: 100%;
   margin: 0 auto var(--spacing-md);
@@ -298,6 +315,7 @@ h1 {
   font-size: clamp(2.1rem, 3vw, 1.76rem);
   font-weight: 600;
   color: var(--color-text-body);
+  text-align: center;
 }
 @media (min-width: 640px) {
   .hero {
@@ -368,7 +386,6 @@ section {
 /* ── Présentation ── */
 .presentation {
   padding: var(--spacing-2xl) 0;
-  border-top: 0.1rem solid var(--color-border-light);
   text-align: center;
 }
 .presentation h2 {
@@ -391,6 +408,7 @@ section {
   font-size: clamp(2.1rem, 3vw, 1.76rem);
   font-weight: 600;
   color: var(--color-text-body);
+  text-align: center;
 }
 @media (min-width: 640px) {
   .presentation {
@@ -564,6 +582,7 @@ section {
   font-size: clamp(2.1rem, 3vw, 1.76rem);
   font-weight: 600;
   color: var(--color-text-body);
+  text-align: center;
 }
 .cta-section .btn {
   width: 100%;
