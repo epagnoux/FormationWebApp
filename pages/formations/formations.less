@@ -17,6 +17,11 @@
     inset: 0;
     opacity: 0.5;
     z-index: -1;
+
+    @media (prefers-reduced-motion: no-preference) {
+      animation: overflow-fade 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+      opacity: 0;
+    }
   }
 
   & .container {
@@ -229,5 +234,15 @@
         translate: 0 0;
       }
     }
+  }
+}
+
+@keyframes overflow-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.5;
   }
 }
