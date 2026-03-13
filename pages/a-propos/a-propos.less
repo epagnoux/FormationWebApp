@@ -1,5 +1,4 @@
-/* stylelint-disable nesting-selector-no-missing-scoping-root */
-/* ── About Page Styles ── */
+@import '../../styles/variables.less';
 
 :host {
   flex: 1;
@@ -9,18 +8,18 @@
 & .about {
   &-subtitle {
     font-weight: 400;
-    color: var(--color-text-secondary);
+    color: @color-text-secondary;
   }
 
   &-discover-label {
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: @spacing-xs;
     font-size: 0.9rem;
-    color: var(--color-text-muted);
+    color: @color-text-muted;
   }
 
   &-ctas {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-xs);
+    gap: @spacing-xs;
   }
 }

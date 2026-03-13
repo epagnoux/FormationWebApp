@@ -1,15 +1,16 @@
-/* ── Legal Pages (Mentions légales, RGPD, etc.) Styles ── */
+@import '../../styles/variables.less';
 
 :host {
   flex: 1;
   display: flex;
+  background: red;
 }
 
 & .legal {
   &-page {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-lg);
+    gap: @spacing-lg;
     text-align: left;
   }
 
@@ -25,15 +26,15 @@
     & p {
       font-size: clamp(1.44rem, 2vw, 1.6rem);
       line-height: 1.4;
-      color: var(--color-text-body);
+      color: @color-text-body;
     }
 
     & a:not(.btn) {
-      color: var(--color-text-primary);
+      color: @color-text-primary;
       text-decoration: underline;
 
       &:hover {
-        color: var(--color-text-muted);
+        color: @color-text-muted;
       }
     }
 

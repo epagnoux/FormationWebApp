@@ -1,4 +1,4 @@
-/* ── Formations Page Styles ── */
+@import '../../styles/variables.less';
 
 :host {
   flex: 1;
@@ -6,7 +6,7 @@
 }
 
 & .formations-hero {
-  padding-top: var(--spacing-2xl);
+  padding-top: @spacing-2xl;
 
   &-overflow {
     position: absolute;
@@ -34,11 +34,11 @@
 
   & .hero-subtitle {
     font-weight: 400;
-    color: var(--color-text-body);
+    color: @color-text-body;
   }
 
   @media (min-width: 640px) {
-    padding-top: var(--spacing-3xl);
+    padding-top: @spacing-3xl;
   }
 
   @media (prefers-reduced-motion: no-preference) {
@@ -54,14 +54,14 @@
 
 & .formation {
   &-banner {
-    padding: var(--spacing-2xl) 0;
+    padding: @spacing-2xl 0;
 
     &-image {
       position: relative;
       width: 100%;
       padding-bottom: 43.75%; /* 7/16 fallback for Safari < 15 */
       aspect-ratio: 16 / 7;
-      background: var(--color-card-background);
+      background: @color-card-background;
       border-radius: 1.6rem;
       overflow: hidden;
 
@@ -77,7 +77,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        color: var(--color-text-primary);
+        color: @color-text-primary;
 
         & svg {
           height: clamp(4.8rem, 10vw, 8rem);
@@ -92,7 +92,7 @@
     }
 
     @media (min-width: 640px) {
-      padding: var(--spacing-3xl) 0;
+      padding: @spacing-3xl 0;
     }
 
     @media (prefers-reduced-motion: no-preference) {
@@ -110,13 +110,13 @@
   }
 
   &-detail {
-    padding: var(--spacing-2xl) 0;
+    padding: @spacing-2xl 0;
 
     & h3 {
-      margin-bottom: var(--spacing-md);
+      margin-bottom: @spacing-md;
       font-size: clamp(1.6rem, 2.5vw, 1.84rem);
       font-weight: 700;
-      color: var(--color-text-primary);
+      color: @color-text-primary;
       text-decoration: underline;
       text-underline-offset: 0.4rem;
 
@@ -125,20 +125,20 @@
         transition: color 0.2s;
 
         &:hover {
-          color: var(--color-text-secondary);
+          color: @color-text-secondary;
         }
       }
     }
 
     @media (min-width: 640px) {
-      padding: var(--spacing-3xl) 0;
+      padding: @spacing-3xl 0;
     }
   }
 
   &-meta {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--spacing-lg) var(--spacing-xl);
+    gap: @spacing-lg @spacing-xl;
 
     @media (min-width: 480px) {
       grid-template-columns: repeat(2, 1fr);
@@ -152,21 +152,21 @@
   &-attr {
     display: flex;
     flex-direction: column;
-    padding: 1.6rem var(--spacing-md);
-    background-color: var(--color-card-background);
+    padding: 1.6rem @spacing-md;
+    background-color: @color-card-background;
     border-radius: 1.6rem;
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.08); //! Important dont use value directly use variable defined in variables.less
 
     & strong {
-      margin-bottom: var(--spacing-xs);
+      margin-bottom: @spacing-xs;
       font-size: clamp(1.36rem, 1.5vw, 1.52rem);
       font-weight: 600;
-      color: var(--color-text-primary);
+      color: @color-text-primary;
     }
 
     &-highlight {
-      padding: var(--spacing-md);
-      background: var(--color-card-background);
+      padding: @spacing-md;
+      background: @color-card-background;
       border-radius: 0.8rem;
     }
 
@@ -174,8 +174,8 @@
       position: relative;
       height: 2.8rem;
       width: 2.8rem;
-      margin-bottom: var(--spacing-sm);
-      background: var(--color-theme-primary);
+      margin-bottom: @spacing-sm;
+      background: @color-theme-primary;
       flex-shrink: 0;
       -webkit-mask-position: center;
       mask-position: center;
@@ -219,7 +219,7 @@
       margin: 0;
       font-size: clamp(1.312rem, 1.5vw, 1.44rem);
       line-height: 1.7;
-      color: var(--color-text-body);
+      color: @color-text-body;
     }
 
     @media (prefers-reduced-motion: no-preference) {
