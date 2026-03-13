@@ -139,9 +139,11 @@
     gap: @spacing-lg @spacing-xl;
 
     & .start {
-      display: flex;
-      flex-direction: column;
-      gap: @spacing-md;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      // gap: @spacing-md;
+      gap: @spacing-lg @spacing-xl;
     }
 
     & .end {

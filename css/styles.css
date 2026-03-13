@@ -1353,9 +1353,10 @@ section {
   gap: var(--spacing-lg) var(--spacing-xl);
 }
 .formation-meta .start {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: var(--spacing-lg) var(--spacing-xl);
 }
 .formation-meta .end {
   display: flex;
