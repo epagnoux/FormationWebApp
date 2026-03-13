@@ -1,0 +1,50 @@
+/* ── Header Fragment Styles ── */
+
+:host {
+  flex: 1;
+  display: flex;
+
+  & .header {
+    position: sticky;
+    top: 0;
+    margin: 0 calc(var(--spacing-lg) * -1);
+    -webkit-backdrop-filter: blur(0) saturate(100%);
+    backdrop-filter: blur(0) saturate(100%);
+    background: transparent;
+    transition:
+      background-color 0.4s ease-out,
+      box-shadow 0.4s ease-out,
+      backdrop-filter 0.4s ease-out,
+      -webkit-backdrop-filter 0.4s ease-out;
+    z-index: 1000;
+
+    & .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      height: 8.4rem;
+    }
+
+    &.scrolled {
+      -webkit-backdrop-filter: blur(2rem) saturate(180%);
+      backdrop-filter: blur(2rem) saturate(180%);
+      background-color: var(--color-background-transparent);
+      box-shadow: 0 0.1rem 0 var(--color-border-light);
+    }
+  }
+
+  & .itentity {
+    display: flex;
+    align-items: baseline;
+    gap: var(--spacing-xs);
+
+    & .name {
+      font-size: 1.84rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      color: var(--color-text-secondary);
+      flex-shrink: 0;
+    }
+  }
+}

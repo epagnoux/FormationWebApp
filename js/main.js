@@ -93,10 +93,8 @@ function setupThemeToggle() {
 document.addEventListener('DOMContentLoaded', function() {
   // Setup toggle pour les boutons déjà présents dans le DOM
   setupThemeToggle();
-  // Déterminer si on est dans /pages/ ou à la racine
-  const isInPages = window.location.pathname.includes('/pages/');
-  const headerPath = isInPages ? 'header.html' : 'header-root.html';
-  const footerPath = isInPages ? 'footer.html' : 'footer-root.html';
+  const headerPath = '/pages/header/header.html';
+  const footerPath = '/pages/footer/footer.html';
   
   // Inclure dynamiquement le header sur toutes les pages
   const headerTarget = document.getElementById('header-include');

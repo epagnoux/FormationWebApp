@@ -1,0 +1,53 @@
+/* ── Legal Pages (Mentions légales, RGPD, etc.) Styles ── */
+
+:host {
+  flex: 1;
+  display: flex;
+}
+
+& .legal {
+  &-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    text-align: left;
+  }
+
+  &-section {
+    & h1 {
+      font-size: clamp(2.4rem, 5vw, 3.52rem);
+    }
+
+    & h2 {
+      font-size: clamp(1.92rem, 3vw, 2.4rem);
+    }
+
+    & p {
+      font-size: clamp(1.44rem, 2vw, 1.6rem);
+      line-height: 1.4;
+      color: var(--color-text-body);
+    }
+
+    & a:not(.btn) {
+      color: var(--color-text-primary);
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--color-text-muted);
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      opacity: 0;
+      transition:
+        opacity 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        translate 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      translate: 0 2.8rem;
+
+      &.in-view {
+        opacity: 1;
+        translate: 0 0;
+      }
+    }
+  }
+}

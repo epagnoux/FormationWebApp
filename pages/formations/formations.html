@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formations – Charlotte®</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <script>
       (function () {
         var t = localStorage.getItem('theme');
@@ -15,18 +15,7 @@
     </script>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <a href="../index.html" class="logo">Charlotte®</a>
-        <nav class="nav">
-          <a href="../index.html">Accueil</a>
-          <a href="formations.html">Formations</a>
-          <a href="a-propos.html">À propos</a>
-          <a href="contact.html" class="btn btn-dark btn-sm">Contact</a>
-          <button class="theme-toggle" aria-label="Changer le thème"></button>
-        </nav>
-      </div>
-    </header>
+    <div id="header-include"></div>
     <main>
       <!-- ════ HERO ════ -->
       <section class="hero formations-hero">
@@ -35,7 +24,7 @@
             Des formations qui transforment.<br /><span class="hero-subtitle">Autonomie, apaisement, posture professionnelle.</span>
           </h1>
           <div class="hero-ctas">
-            <a href="contact.html" class="btn btn-dark">Demander un devis</a>
+            <a href="../contact/contact.html" class="btn btn-dark">Demander un devis</a>
           </div>
         </div>
       </section>
@@ -102,7 +91,7 @@
       <!-- ════ DÉTAIL FORMATION ════ -->
       <section class="formation-detail">
         <div class="container">
-          <h3><a href="regulation-nerveuse.html">Réguler son système nerveux</a></h3>
+          <h3><a href="../regulation-nerveuse.html">Réguler son système nerveux</a></h3>
           <div class="formation-meta">
             <div class="formation-attr">
               <div class="formation-attr-icon icon-target"></div>
@@ -139,6 +128,6 @@
       </section>
     </main>
     <div id="footer-include"></div>
-    <script src="../js/main.js"></script>
+    <script src="../../js/main.js"></script>
   </body>
 </html>

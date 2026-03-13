@@ -1,0 +1,26 @@
+/* stylelint-disable nesting-selector-no-missing-scoping-root */
+/* ── About Page Styles ── */
+
+:host {
+  flex: 1;
+  display: flex;
+}
+
+& .about {
+  &-subtitle {
+    font-weight: 400;
+    color: var(--color-text-secondary);
+  }
+
+  &-discover-label {
+    margin-bottom: var(--spacing-xs);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+
+  &-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+  }
+}

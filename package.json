@@ -1,12 +1,13 @@
 {
   "scripts": {
     "less": "lessc css/style.less css/style.css",
-    "less:watch": "less-watch-compiler css css style.less"
+    "less:watch": "less-watch-compiler css css"
   },
   "dependencies": {
     "stylelint": "^17.4.0"
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "less": "^4.6.3",
     "less-watch-compiler": "^1.17.5",
     "prettier": "^3.8.1",
