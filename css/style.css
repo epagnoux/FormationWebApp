@@ -117,6 +117,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  position: relative;
   padding: 0 var(--spacing-lg);
   line-height: 1.6;
   /* color: var(--color-text-primary); */
@@ -124,6 +125,16 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.overflow {
+  position: absolute;
+  background: url('../images/main-header.jpeg') top/cover no-repeat;
+  background-attachment: initial;
+  background-size: contain;
+  filter: blur(0.8rem);
+  inset: 0;
+  opacity: 0.5;
 }
 
 a {
@@ -305,10 +316,11 @@ h6 {
   /* background: linear-gradient(135deg, #4a85db 0%, #61a5bb 100%); */
   /* 1 background: linear-gradient(135deg, #4a85db 0%, #69b4cd 100%); */
   /* background: linear-gradient(135deg, #4a85db 0%, #679faa 50%, #8ec8cd 100%) */
-  background: linear-gradient(90deg, #e4f6f0, #9dcfca 31%, #6b95ac 68%, #45657d);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(90deg, #e4f6f0, #9dcfca 31%, #6b95ac 68%, #45657d); */
+  color: var(--color-text-primary);
+  /* -webkit-background-clip: text; */
+  /* background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 /* ── Hero ── */
@@ -326,10 +338,11 @@ h6 {
   /* margin: 0 2.4rem 2.4rem 0; */
   margin: 0 -3.6rem;
   margin-bottom: var(--spacing-lg);
-  background: url('../images/main-header.jpeg') top/cover no-repeat;
+  /* background: url('../images/main-header.jpeg') top/cover no-repeat; */
   background-attachment: initial;
   /* border-radius: 2.4rem; */
   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
+  /* filter: blur(0.8rem); */
 }
 
 /* Optimize images for retina displays */
@@ -519,7 +532,7 @@ section {
   aspect-ratio: 4/3;
   background: var(--color-card-background);
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
   overflow: hidden;
 }
 
@@ -550,7 +563,7 @@ section {
   aspect-ratio: 4/3;
   background: var(--color-card-background);
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
   overflow: hidden;
 }
 
@@ -769,6 +782,15 @@ section {
   color: var(--color-hover-dark);
 }
 
+.footer-grid ul li.contact-role {
+  font-size: 1.36rem;
+  color: var(--color-text-secondary);
+}
+
+.footer-grid ul li.contact-role span {
+  color: var(--color-text-very-muted);
+}
+
 .footer-bottom {
   display: flex;
   flex-direction: column;
@@ -857,7 +879,7 @@ section {
 
 .page-content h1 {
   margin-bottom: var(--spacing-lg);
-  padding: 0 var(--spacing-sm);
+  /* padding: 0 var(--spacing-sm); */
   font-size: clamp(2.4rem, 5vw, 3.52rem);
 }
 
@@ -875,29 +897,33 @@ section {
 /* ── Legal Pages (RGPD, Mentions légales) ── */
 
 .legal-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
   text-align: left;
 }
-
+/* 
 .legal-section {
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-sm) 0;
 }
 
 .legal-section:first-child {
   padding-top: var(--spacing-2xl);
 }
+*/
 
 .legal-section h1 {
-  margin-bottom: var(--spacing-md);
+  /* margin-bottom: var(--spacing-md); */
   font-size: clamp(2.4rem, 5vw, 3.52rem);
 }
 
 .legal-section h2 {
-  margin-bottom: var(--spacing-md);
+  /* margin-bottom: var(--spacing-md); */
   font-size: clamp(1.92rem, 3vw, 2.4rem);
 }
 
 .legal-section p {
-  margin-bottom: var(--spacing-sm);
+  /* margin-bottom: var(--spacing-sm); */
   font-size: clamp(1.44rem, 2vw, 1.6rem);
   line-height: 1.4;
   color: var(--color-text-body);
@@ -914,7 +940,6 @@ section {
 
 @media (min-width: 640px) {
   .legal-section:first-child {
-    /* padding-top: var(--spacing-3xl); */
   }
 }
 
@@ -971,7 +996,7 @@ section {
 @supports (aspect-ratio: 16 / 7) {
   .formation-banner-image {
     padding-bottom: 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
   }
 }
 
