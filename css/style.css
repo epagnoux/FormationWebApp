@@ -82,8 +82,8 @@
   box-sizing: border-box;
 }
 html {
-  position: relative;
   font-size: 62.5%;
+  color: red;
   scroll-behavior: smooth;
 }
 body {
