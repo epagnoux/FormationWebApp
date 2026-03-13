@@ -301,6 +301,9 @@ h1 {
   padding-bottom: var(--spacing-lg);
   text-align: center;
 }
+.hero .container {
+  margin-top: 62rem;
+}
 .hero h1 {
   max-width: 100%;
   margin: 0 auto var(--spacing-md);
