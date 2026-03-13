@@ -90,6 +90,16 @@ function setupThemeToggle() {
   });
 }
 
+// ── Réinitialiser l'effet scroll du header ──
+function initHeaderScroll() {
+  var header = document.querySelector('.header');
+  if (!header) return;
+
+  window.addEventListener('scroll', function () {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   // Setup toggle pour les boutons déjà présents dans le DOM
   setupThemeToggle();
@@ -107,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(html => {
         headerTarget.innerHTML = html;
         setupThemeToggle(); // Re-bind toggle après injection dynamique
+        initHeaderScroll(); // Réinitialiser l'effet de scroll du header
       })
       .catch(error => console.error('Erreur:', error));
   }

@@ -103,6 +103,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#header-include {
+  display: contents;
+}
 p {
   max-width: 56rem;
   margin-bottom: var(--spacing-sm);

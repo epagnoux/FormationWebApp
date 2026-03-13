@@ -127,6 +127,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#header-include {
+  display: contents; // Rend le wrapper transparent pour le layout — sticky fonctionne sur le .header
+}
+
 & p {
   max-width: 56rem;
   margin-bottom: var(--spacing-sm);
