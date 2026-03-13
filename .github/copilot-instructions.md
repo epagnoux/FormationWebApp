@@ -1,13 +1,12 @@
-# Coding Conventions
+---
+applyTo: '**/*.less'
+---
 
-This file contains the patterns, structures, and coding conventions to follow when developing.
+# LESS Styles Conventions — SentinelWebPortal
 
+## File Structure
 
-## CSS Styles
-
-### Structure
-
-```css
+```less
 @import '~src/styles/variables.less';
 
 :host {
@@ -35,19 +34,14 @@ This file contains the patterns, structures, and coding conventions to follow wh
 }
 ```
 
-### Style Conventions
+## Rules
 
-- **Units:** Use only `rem` (10px = 1rem). **This applies everywhere without exception:** dimensions, spacing, shadows, transforms (`translateY`, `translate`), border-radius, offsets, `box-shadow` values, `clamp()` arguments, etc.
-- **`px` is forbidden** except for:
-  - `@media` breakpoints (e.g. `min-width: 768px`)
-  - SVG intrinsic attributes (e.g. `viewBox`)
-  - Third-party API constraints
-- **Standard Spacing:** 0.3rem, 0.6rem, 0.8rem, 1.2rem, 1.6rem, 1.8rem, 2rem, 2.4rem, 2.6rem
-- **Media Queries:** use px for media queries.
-- **Existing code:** When editing an existing file, also convert any `px` values found in pre-existing code (outside media queries) to `rem`.
-- **Class Names:** Complete class names by referring to the HTML file with the same component name
-
-## Markdown documentation - Guide / Summary
-
-- no generate guide ou summmary
-  or other documetation .md.
+- **Root selector:** Always use `:host` as the root selector
+- **Child selectors:** Use `& .class-name` syntax for nesting
+- **Units:** Use only `rem` — never `px` (reference: 10px = 1rem)
+- **Standard spacing values:** `0.3rem`, `0.6rem`, `0.8rem`, `1.2rem`, `1.6rem`, `1.8rem`, `2rem`, `2.4rem`, `2.6rem`
+- **Colors / fonts / sizes:** Always use variables from `variables.less` — never hard-code values directly
+- **Direct values:** If a direct value is unavoidable, add comment: `//! Important dont use value directly use variable defined in variables.less`
+- **Empty classes:** Remove all empty rule sets (`.my-class {}`)
+- **Class names:** Refer to the corresponding `.component.html` file to complete class names
+- **Variables source:** Only use LESS variables defined in `src/styles/variables.less`
