@@ -1331,19 +1331,17 @@ section {
   padding: var(--spacing-2xl) 0;
 }
 .formation-detail h3 {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
   font-size: clamp(1.6rem, 2.5vw, 1.84rem);
   font-weight: 700;
   color: var(--color-text-primary);
-  text-decoration: underline;
-  text-underline-offset: 0.4rem;
 }
-.formation-detail h3 a {
-  color: inherit;
-  transition: color 0.2s;
-}
-.formation-detail h3 a:hover {
-  color: var(--color-text-secondary);
+.formation-detail .formation-tagline {
+  margin-bottom: var(--spacing-md);
+  font-size: clamp(1.312rem, 1.5vw, 1.44rem);
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--color-text-body);
 }
 @media (min-width: 640px) {
   .formation-detail {
@@ -1351,9 +1349,18 @@ section {
   }
 }
 .formation-meta {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
   gap: var(--spacing-lg) var(--spacing-xl);
+}
+.formation-meta .start {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+.formation-meta .end {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
 }
 @media (min-width: 480px) {
   .formation-meta {
@@ -1427,6 +1434,20 @@ section {
   font-size: clamp(1.312rem, 1.5vw, 1.44rem);
   line-height: 1.7;
   color: var(--color-text-body);
+}
+.formation-attr-list {
+  margin: 0;
+  padding-left: var(--spacing-md);
+  font-size: clamp(1.312rem, 1.5vw, 1.44rem);
+  line-height: 1.8;
+  color: var(--color-text-body);
+  list-style: disc;
+}
+.formation-attr-list li {
+  margin-bottom: var(--spacing-xs);
+}
+.formation-attr-list li:last-child {
+  margin-bottom: 0;
 }
 @media (prefers-reduced-motion: no-preference) {
   .formation-attr {
