@@ -1,4 +1,4 @@
-// Fichier JavaScript principal pour le site Charlotte®
+// Fichier JavaScript principal pour le site Formation FCP
 // Ajoutez ici vos scripts personnalisés.
 
 // ── Intersection Observer pour les animations au scroll ──
