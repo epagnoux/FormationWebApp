@@ -1288,7 +1288,7 @@ section {
 }
 .formation-banner {
   padding: var(--spacing-2xl) 0;
-  scroll-margin-top: 4.4rem;
+  scroll-margin-top: 4.2rem;
 }
 .formation-banner-image {
   position: relative;
