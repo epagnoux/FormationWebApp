@@ -25,7 +25,7 @@
   // Éléments à animer (ciblage précis pour éviter les conflits d'opacité parent/enfant)
   const elementsToObserve = document.querySelectorAll(
     '.hero-image, .hero h1, .hero p, .hero-ctas .btn, .presentation, .cta-section, .card, .value-item, ' +
-    '.formations-hero, .about-hero, .formation-banner, ' +
+    '.formations-hero, .formation-banner, ' +
     '.contact-intro, .contact-form-section, .contact-info, ' +
     '.page-content, .legal-section'
   );

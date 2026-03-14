@@ -1532,7 +1532,6 @@ section {
 .about .content-photo {
   flex: 1;
   display: flex;
-  align-items: center;
 }
 .about-discover-label {
   margin-bottom: var(--spacing-xs);
