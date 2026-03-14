@@ -5,46 +5,6 @@
   display: flex;
 }
 
-& .about-hero {
-  padding-top: @spacing-2xl;
-
-  &-overflow {
-    position: absolute;
-    background: url('../images/a-propos.jpeg') top/cover no-repeat;
-    background-size: contain;
-    inset: 0;
-    opacity: 0.5;
-    z-index: -1;
-
-    @media (prefers-reduced-motion: no-preference) {
-      animation: overflow-fade 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-      opacity: 0;
-    }
-  }
-
-  & .container {
-    margin-top: 20rem;
-  }
-
-  & h1 {
-    text-align: center;
-  }
-
-  @media (min-width: 640px) {
-    padding-top: @spacing-3xl;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    opacity: 0;
-    transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
-    &.in-view {
-      opacity: 1;
-      translate: 0 0;
-    }
-  }
-}
-
 & .about {
   &-subtitle {
     font-weight: 400;
@@ -61,5 +21,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: @spacing-xs;
+  }
+
+  & .container {
+    display: flex;
+    gap: @spacing-lg;
   }
 }

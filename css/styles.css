@@ -1288,7 +1288,7 @@ section {
 }
 .formation-banner {
   padding: var(--spacing-2xl) 0;
-  scroll-margin-top: 4.2rem;
+  scroll-margin-top: 4.4rem;
 }
 .formation-banner-image {
   position: relative;
@@ -1513,44 +1513,6 @@ section {
   flex: 1;
   display: flex;
 }
-.about-hero {
-  padding-top: var(--spacing-2xl);
-}
-.about-hero-overflow {
-  position: absolute;
-  background: url('../images/a-propos.jpeg') top / cover no-repeat;
-  background-size: contain;
-  inset: 0;
-  opacity: 0.5;
-  z-index: -1;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .about-hero-overflow {
-    animation: overflow-fade 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-    opacity: 0;
-  }
-}
-.about-hero .container {
-  margin-top: 20rem;
-}
-.about-hero h1 {
-  text-align: center;
-}
-@media (min-width: 640px) {
-  .about-hero {
-    padding-top: var(--spacing-3xl);
-  }
-}
-@media (prefers-reduced-motion: no-preference) {
-  .about-hero {
-    opacity: 0;
-    transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-  .about-hero.in-view {
-    opacity: 1;
-    translate: 0 0;
-  }
-}
 .about-subtitle {
   font-weight: 400;
   color: var(--color-text-secondary);
@@ -1564,6 +1526,10 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-xs);
+}
+.about .container {
+  display: flex;
+  gap: var(--spacing-lg);
 }
 :host {
   flex: 1;
