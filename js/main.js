@@ -144,4 +144,15 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }, 100);
   }
+
+  // ── Navigation par ancre : afficher immédiatement la cible et recaler le scroll ──
+  // if (window.location.hash) {
+  //   var target = document.querySelector(window.location.hash);
+  //   if (target) {
+  //     target.classList.add('in-view');
+  //     requestAnimationFrame(function() {
+  //       target.scrollIntoView({ behavior: 'auto' });
+  //     });
+  //   }
+  // }
 });

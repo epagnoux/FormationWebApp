@@ -55,6 +55,7 @@
 & .formation {
   &-banner {
     padding: @spacing-2xl 0;
+    scroll-margin-top: 4.2rem;
 
     &-image {
       position: relative;
@@ -102,7 +103,8 @@
         translate 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       translate: 0 2.8rem;
 
-      &.in-view {
+      &.in-view,
+      &:target {
         opacity: 1;
         translate: 0 0;
       }

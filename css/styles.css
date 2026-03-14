@@ -1288,6 +1288,7 @@ section {
 }
 .formation-banner {
   padding: var(--spacing-2xl) 0;
+  scroll-margin-top: 4.2rem;
 }
 .formation-banner-image {
   position: relative;
@@ -1334,7 +1335,8 @@ section {
     transition: opacity 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94), translate 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     translate: 0 2.8rem;
   }
-  .formation-banner.in-view {
+  .formation-banner.in-view,
+  .formation-banner:target {
     opacity: 1;
     translate: 0 0;
   }
