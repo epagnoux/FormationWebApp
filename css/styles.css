@@ -1554,6 +1554,9 @@ section {
   flex-direction: column;
   gap: var(--spacing-sm);
 }
+.about .infos h2 {
+  scroll-margin-top: 10.2rem;
+}
 .about .legal-section {
   padding-bottom: var(--spacing-2xl);
 }
