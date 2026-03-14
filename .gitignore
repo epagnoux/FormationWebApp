@@ -43,3 +43,6 @@ Thumbs.db
 
 # Test Results
 /TESTS-*.xml
+
+# CSS Map
+/*.css.map*/

@@ -3,80 +3,94 @@
 :host {
   flex: 1;
   display: flex;
+}
 
-  & .about {
-    padding: @spacing-2xl 0;
+& .about {
+  padding: @spacing-2xl 0;
 
-    & .legal-section {
-      padding-bottom: @spacing-2xl;
+  &-subtitle {
+    font-weight: 400;
+    color: @color-text-secondary;
+  }
 
-      & h1 {
-        margin-bottom: @spacing-md;
-        font-size: clamp(2.4rem, 5vw, 3.52rem);
-        font-weight: 800;
-        line-height: 1.25;
-        letter-spacing: -0.02em;
-      }
+  &-photo {
+    flex: 1;
+    height: 42rem;
+    // height: 28rem;
+    min-height: 20rem;
+    background-image: url('../../images/a-propos.jpeg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.6rem;
+  }
 
-      & p {
-        margin-bottom: @spacing-sm;
-        font-size: clamp(1.408rem, 2vw, 1.52rem);
-        line-height: 1.7;
-        color: @color-text-body;
+  & .content-photo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
 
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
+  &-discover-label {
+    margin-bottom: @spacing-xs;
+    font-size: 0.9rem;
+    color: @color-text-muted;
+  }
+
+  &-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: @spacing-sm;
+
+    @media (min-width: 640px) {
+      gap: @spacing-md;
+    }
+  }
+
+  & .infos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: @spacing-sm;
+  }
+
+  & .legal-section {
+    padding-bottom: @spacing-2xl;
+
+    & h1 {
+      margin-bottom: @spacing-md;
+      font-size: clamp(2.4rem, 5vw, 3.52rem);
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
     }
 
-    &-subtitle {
-      font-weight: 400;
-      color: @color-text-secondary;
-    }
+    & p {
+      margin-bottom: @spacing-sm;
+      font-size: clamp(1.408rem, 2vw, 1.52rem);
+      line-height: 1.7;
+      color: @color-text-body;
 
-    &-photo {
-      flex-shrink: 0;
-
-      & img {
-        max-width: 28rem;
-        border-radius: 1.6rem;
-      }
-    }
-
-    &-discover-label {
-      margin-bottom: @spacing-xs;
-      font-size: 0.9rem;
-      color: @color-text-muted;
-    }
-
-    &-ctas {
-      display: flex;
-      flex-wrap: wrap;
-      gap: @spacing-sm;
-
-      @media (min-width: 640px) {
-        gap: @spacing-md;
+      &:last-child {
+        margin-bottom: 0;
       }
     }
 
     & .container {
       display: flex;
+      flex-direction: column-reverse;
       gap: @spacing-lg;
-    }
 
-    & .infos {
-      display: flex;
-      flex-direction: column;
-      gap: @spacing-sm;
-    }
-
-    @media (min-width: 640px) {
-      padding: @spacing-3xl 0;
-
-      & .legal-section {
-        padding-bottom: @spacing-3xl;
+      @media (min-width: 1024px) {
+        flex-direction: row;
       }
     }
+  }
+}
+
+@media (min-width: 640px) {
+  padding: @spacing-3xl 0;
+
+  & .legal-section {
+    padding-bottom: @spacing-3xl;
   }
 }

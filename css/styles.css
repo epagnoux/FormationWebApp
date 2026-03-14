@@ -1513,68 +1513,80 @@ section {
   flex: 1;
   display: flex;
 }
-:host .about {
+.about {
   padding: var(--spacing-2xl) 0;
 }
-:host .about .legal-section {
+.about-subtitle {
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+.about-photo {
+  flex: 1;
+  height: 42rem;
+  min-height: 20rem;
+  background-image: url('../../images/a-propos.jpeg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 1.6rem;
+}
+.about .content-photo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.about-discover-label {
+  margin-bottom: var(--spacing-xs);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+.about-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+@media (min-width: 640px) {
+  .about-ctas {
+    gap: var(--spacing-md);
+  }
+}
+.about .infos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+.about .legal-section {
   padding-bottom: var(--spacing-2xl);
 }
-:host .about .legal-section h1 {
+.about .legal-section h1 {
   margin-bottom: var(--spacing-md);
   font-size: clamp(2.4rem, 5vw, 3.52rem);
   font-weight: 800;
   line-height: 1.25;
   letter-spacing: -0.02em;
 }
-:host .about .legal-section p {
+.about .legal-section p {
   margin-bottom: var(--spacing-sm);
   font-size: clamp(1.408rem, 2vw, 1.52rem);
   line-height: 1.7;
   color: var(--color-text-body);
 }
-:host .about .legal-section p:last-child {
+.about .legal-section p:last-child {
   margin-bottom: 0;
 }
-:host .about-subtitle {
-  font-weight: 400;
-  color: var(--color-text-secondary);
-}
-:host .about-photo {
-  flex-shrink: 0;
-}
-:host .about-photo img {
-  max-width: 28rem;
-  border-radius: 1.6rem;
-}
-:host .about-discover-label {
-  margin-bottom: var(--spacing-xs);
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-}
-:host .about-ctas {
+.about .legal-section .container {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-sm);
-}
-@media (min-width: 640px) {
-  :host .about-ctas {
-    gap: var(--spacing-md);
-  }
-}
-:host .about .container {
-  display: flex;
+  flex-direction: column-reverse;
   gap: var(--spacing-lg);
 }
-:host .about .infos {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
+@media (min-width: 1024px) {
+  .about .legal-section .container {
+    flex-direction: row;
+  }
 }
 @media (min-width: 640px) {
-  :host .about {
-    padding: var(--spacing-3xl) 0;
-  }
-  :host .about .legal-section {
+  padding: var(--spacing-3xl) 0;
+  .legal-section {
     padding-bottom: var(--spacing-3xl);
   }
 }
