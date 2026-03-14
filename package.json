@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "less": "lessc styles.less css/styles.css",
+    "less": "lessc --source-map styles.less css/styles.css",
     "less:watch": "nodemon --watch styles --watch pages --ext less --exec 'npm run less'"
   },
   "dependencies": {

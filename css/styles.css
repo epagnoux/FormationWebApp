@@ -1358,7 +1358,7 @@ section {
 }
 @media (min-width: 640px) {
   .formation-detail {
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-xl) 0;
   }
 }
 .formation-meta {
@@ -1373,6 +1373,9 @@ section {
   gap: var(--spacing-md);
   grid-column: 1;
   grid-row: 1 / 3;
+}
+.formation-meta .start .formation-attr {
+  flex: 1;
 }
 .formation-meta .end {
   display: grid;
@@ -1399,7 +1402,7 @@ section {
 .formation-attr {
   display: flex;
   flex-direction: column;
-  padding: 1.6rem var(--spacing-md);
+  padding: var(--spacing-md);
   background-color: var(--color-card-background);
   border-radius: 1.6rem;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.08);
@@ -1823,3 +1826,4 @@ section {
     padding: var(--spacing-3xl) 0;
   }
 }
+/*# sourceMappingURL=styles.css.map */
