@@ -561,6 +561,11 @@ section {
   border-radius: 1.6rem;
   overflow: hidden;
 }
+.card-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .card-image svg {
   height: clamp(4rem, 8vw, 4.8rem);
   width: clamp(4rem, 8vw, 4.8rem);
@@ -1246,7 +1251,6 @@ section {
   background: url('../images/formation-header.jpeg') top / cover no-repeat;
   background-attachment: initial;
   background-size: contain;
-  filter: blur(0.8rem);
   inset: 0;
   opacity: 0.5;
   z-index: -1;
