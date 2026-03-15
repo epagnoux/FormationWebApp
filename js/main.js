@@ -77,7 +77,19 @@
   } else {
     document.documentElement.setAttribute('data-theme', 'dark');
   }
+  updateFavicon();
 })();
+
+// ── Update favicon based on theme ──
+function updateFavicon() {
+  const theme = document.documentElement.getAttribute('data-theme');
+  const faviconLink = document.querySelector('link[rel="icon"]');
+  const faviconPath = theme === 'dark' ? 'images/favicon-dark.svg' : 'images/favicon-light.svg';
+  
+  if (faviconLink) {
+    faviconLink.href = faviconPath;
+  }
+}
 
 function setupThemeToggle() {
   document.querySelectorAll('.theme-toggle').forEach(function(btn) {
@@ -86,6 +98,7 @@ function setupThemeToggle() {
       const next = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
+      updateFavicon();
     });
   });
 }
