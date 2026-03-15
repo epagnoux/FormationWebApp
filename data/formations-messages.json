@@ -1,0 +1,34 @@
+{
+  "formations": [
+    {
+      "id": "regulation",
+      "title": "Réguler son système pour réguler celui des autres",
+      "shortTitle": "Régulation du système nerveux",
+      "email": "charlotte.pagnoux@gmail.com",
+      "subject": "Demande de devis pour la formation - Réguler son système pour réguler celui des autres.",
+      "bodyIntro": "Bonjour,",
+      "bodyMain": "je vous écris pour vous demander de me contacter pour parler d'une demande de devis pour la formation - \"Réguler son système pour réguler celui des autres\"",
+      "bodyClosing": "Dans l'attente, bonne journée"
+    },
+    {
+      "id": "rejection",
+      "title": "Le rejet comme signal et levier de compréhension - Axe d'approfondissement",
+      "shortTitle": "Le rejet comme signal",
+      "email": "charlotte.pagnoux@gmail.com",
+      "subject": "Demande de devis pour la formation - Le rejet comme signal et levier de compréhension - Axe d'approfondissement.",
+      "bodyIntro": "Bonjour,",
+      "bodyMain": "je vous écris pour vous demander de me contacter pour parler d'une demande de devis pour la formation - \"Le rejet comme signal et levier de compréhension - Axe d'approfondissement\"",
+      "bodyClosing": "Dans l'attente, bonne journée"
+    },
+    {
+      "id": "customized",
+      "title": "Approfondissements / Interventions sur mesure",
+      "shortTitle": "Interventions sur mesure",
+      "email": "charlotte.pagnoux@gmail.com",
+      "subject": "Demande de devis pour la formation - Approfondissements / Interventions sur mesure.",
+      "bodyIntro": "Bonjour,",
+      "bodyMain": "je vous écris pour vous demander de me contacter pour parler d'une demande de devis pour la formation - \"Approfondissements / Interventions sur mesure\"",
+      "bodyClosing": "Dans l'attente, bonne journée"
+    }
+  ]
+}
