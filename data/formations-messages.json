@@ -27,7 +27,17 @@
       "email": "charlotte.pagnoux@gmail.com",
       "subject": "Demande de devis pour la formation - Approfondissements / Interventions sur mesure.",
       "bodyIntro": "Bonjour,",
-      "bodyMain": "je vous écris pour vous demander de me contacter pour parler d'une demande de devis pour la formation - \"Approfondissements / Interventions sur mesure\"",
+      "bodyMain": "je vous écris pour vous demander de me contacter pour parler d'une demande de devis pour une formation",
+      "bodyClosing": "Dans l'attente, bonne journée"
+    },
+    {
+      "id": "generic",
+      "title": "Demande générale de devis",
+      "shortTitle": "Devis",
+      "email": "charlotte.pagnoux@gmail.com",
+      "subject": "Demande de prise de contact afins établir un devis",
+      "bodyIntro": "Bonjour,",
+      "bodyMain": "je vous écris pour vous demander` de me contacter afin que nous puissions discuter de mes besoins en formation et établir un devis",
       "bodyClosing": "Dans l'attente, bonne journée"
     }
   ]
