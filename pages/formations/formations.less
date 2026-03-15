@@ -129,6 +129,23 @@
       color: @color-text-primary;
     }
 
+    &-header {
+      display: flex;
+      align-items: baseline;
+      gap: 2.4rem;
+
+      & .start {
+        flex: 1;
+        display: flex;
+        // overflow-wrap: break-word;
+      }
+
+      & .end {
+        flex: none;
+        display: flex;
+      }
+    }
+
     & .formation-tagline {
       margin-bottom: @spacing-md;
       font-size: clamp(1.312rem, 1.5vw, 1.44rem);

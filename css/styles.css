@@ -1357,6 +1357,19 @@ section {
   font-weight: 700;
   color: var(--color-text-primary);
 }
+.formation-detail-header {
+  display: flex;
+  align-items: baseline;
+  gap: 2.4rem;
+}
+.formation-detail-header .start {
+  flex: 1;
+  display: flex;
+}
+.formation-detail-header .end {
+  flex: none;
+  display: flex;
+}
 .formation-detail .formation-tagline {
   margin-bottom: var(--spacing-md);
   font-size: clamp(1.312rem, 1.5vw, 1.44rem);
