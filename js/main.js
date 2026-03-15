@@ -87,7 +87,7 @@
 function updateFavicon() {
   const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const faviconLink = document.querySelector('link[rel="icon"]');
-  const faviconPath = isDarkMode ? 'images/favicon-dark.svg' : 'images/favicon-light.svg';
+  const faviconPath = isDarkMode ? 'images/favicon-light.svg' : 'images/favicon-dark.svg';
   
   if (faviconLink) {
     faviconLink.href = faviconPath;
