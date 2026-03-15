@@ -78,13 +78,16 @@
     document.documentElement.setAttribute('data-theme', 'dark');
   }
   updateFavicon();
+  
+  // Listen for OS theme changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
 })();
 
-// ── Update favicon based on theme ──
+// ── Update favicon based on OS system theme ──
 function updateFavicon() {
-  const theme = document.documentElement.getAttribute('data-theme');
+  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const faviconLink = document.querySelector('link[rel="icon"]');
-  const faviconPath = theme === 'dark' ? 'images/favicon-dark.svg' : 'images/favicon-light.svg';
+  const faviconPath = isDarkMode ? 'images/facicon-dark.svg' : 'images/facicon-light.svg';
   
   if (faviconLink) {
     faviconLink.href = faviconPath;
